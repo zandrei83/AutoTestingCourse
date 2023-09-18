@@ -20,12 +20,17 @@ try:
         )
 
     if browser.find_element(By.ID, "book").is_enabled():
+
         browser.find_element(By.ID, "book").click()
 
         if browser.find_element(By.ID, 'input_value').is_displayed():
+
             x = browser.find_element(By.ID, 'input_value').text
+
             y = calc(x)
+
             browser.find_element(By.ID, "answer").send_keys(y)
+
             browser.find_element(By.ID, "solve").click()
 
 finally:

@@ -23,6 +23,7 @@ try:
     input4 = browser.find_element(By.ID, "country")
     input4.send_keys("Russia")
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
+
     button.click()
 
 finally:

@@ -11,6 +11,7 @@ try:
 
     letters = string.ascii_lowercase
     word = ''
+
     for element in elements:
         word = ''.join(random.sample(letters, random.randrange(3, 15))).title()
         element.send_keys(word)

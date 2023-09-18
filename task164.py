@@ -20,6 +20,7 @@ try:
 
     # Проверяем, что смогли зарегистрироваться
     # ждем загрузки страницы
+
     time.sleep(1)
 
     # находим элемент, содержащий текст
@@ -28,6 +29,7 @@ try:
     welcome_text = welcome_text_elt.text
 
     # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
+
     assert "Congratulations! You have successfully registered!" == welcome_text
 
 finally:

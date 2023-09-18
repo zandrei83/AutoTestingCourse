@@ -25,11 +25,9 @@ try:
     browser.find_element(By.ID, "dropdown").click()
     browser.find_element(By.CSS_SELECTOR, f"[value='{res}']").click()
 
-
     #second
     #select = Select(browser.find_element(By.ID, "dropdown"))
     #select.select_by_value(str(res))
-
 
     browser.find_element(By.CSS_SELECTOR, ".btn.btn-default").click()
 

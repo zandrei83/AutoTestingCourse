@@ -20,7 +20,8 @@ try:
     y = calc(x)
 
     text_field = browser.find_element(By.ID, "answer")
-    browser.execute_script(" return arguments[0].scrollIntoView(true);",text_field)
+
+    browser.execute_script(" return arguments[0].scrollIntoView(true);", text_field)
 
     text_field.send_keys(y)
 

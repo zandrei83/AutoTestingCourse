@@ -14,8 +14,8 @@ try:
 
     x = browser.find_element(By.ID,'treasure').get_attribute('valuex')
 
-    print(x)
-    
+    #print(x)
+
     y = calc(x)
 
     browser.find_element(By.ID, "answer").send_keys(y)
@@ -24,9 +24,6 @@ try:
     browser.find_element(By.ID, "robotsRule").click()
 
     browser.find_element(By.CSS_SELECTOR, ".btn.btn-default").click()
-
-
-
 
 
 finally:

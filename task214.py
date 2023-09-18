@@ -27,8 +27,6 @@ try:
 
     browser.find_element(By.CSS_SELECTOR, ".btn.btn-primary").click()
 
-
-
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(5)

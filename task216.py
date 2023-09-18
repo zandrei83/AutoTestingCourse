@@ -13,6 +13,7 @@ def calc(x):
 try:
 
     link = "http://suninjuly.github.io/redirect_accept.html"
+
     browser = webdriver.Chrome()
     browser.get(link)
 
